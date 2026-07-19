@@ -163,7 +163,7 @@ export default function Home() {
             <div className="service-card p-8 bg-slate-50 rounded-xl border border-slate-300 hover:border-blue-400 hover:shadow-lg transition">
               <div className="text-5xl mb-4">⚙️</div>
               <h4 className="text-2xl font-bold text-slate-900 mb-3">Installation</h4>
-              <p className="text-slate-600 mb-6">[PLACEHOLDER: Service description]</p>
+              <p className="text-slate-600 mb-6">Professional AC system installation for residential and commercial spaces with expert sizing, quality equipment, and warranty coverage.</p>
               <Link href="/services" className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">
                 Learn More
               </Link>
@@ -172,7 +172,7 @@ export default function Home() {
             <div className="service-card p-8 bg-slate-50 rounded-xl border border-slate-300 hover:border-blue-400 hover:shadow-lg transition">
               <div className="text-5xl mb-4">🔧</div>
               <h4 className="text-2xl font-bold text-slate-900 mb-3">Maintenance</h4>
-              <p className="text-slate-600 mb-6">[PLACEHOLDER: Service description]</p>
+              <p className="text-slate-600 mb-6">Regular maintenance and tune-ups to keep your AC running efficiently, extend system lifespan, and maintain optimal performance year-round.</p>
               <Link href="/services" className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">
                 Learn More
               </Link>
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="service-card p-8 bg-slate-50 rounded-xl border border-slate-300 hover:border-blue-400 hover:shadow-lg transition">
               <div className="text-5xl mb-4">🛠️</div>
               <h4 className="text-2xl font-bold text-slate-900 mb-3">Repair</h4>
-              <p className="text-slate-600 mb-6">[PLACEHOLDER: Service description]</p>
+              <p className="text-slate-600 mb-6">Fast and reliable AC repair services available 24/7. Same-day service for most emergencies in Metro Manila with certified technicians.</p>
               <Link href="/services" className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">
                 Learn More
               </Link>
