@@ -3,71 +3,6 @@
 import Link from 'next/link';
 
 export default function Tips() {
-  const tips = [
-    {
-      title: '[PLACEHOLDER: Blog Title 1]',
-      date: '[PLACEHOLDER: Date]',
-      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
-      category: '[PLACEHOLDER: Category]',
-    },
-    {
-      title: '[PLACEHOLDER: Blog Title 2]',
-      date: '[PLACEHOLDER: Date]',
-      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
-      category: '[PLACEHOLDER: Category]',
-    },
-    {
-      title: '[PLACEHOLDER: Blog Title 3]',
-      date: '[PLACEHOLDER: Date]',
-      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
-      category: '[PLACEHOLDER: Category]',
-    },
-    {
-      title: '[PLACEHOLDER: Blog Title 4]',
-      date: '[PLACEHOLDER: Date]',
-      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
-      category: '[PLACEHOLDER: Category]',
-    },
-    {
-      title: '[PLACEHOLDER: Blog Title 5]',
-      date: '[PLACEHOLDER: Date]',
-      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
-      category: '[PLACEHOLDER: Category]',
-    },
-    {
-      title: '[PLACEHOLDER: Blog Title 6]',
-      date: '[PLACEHOLDER: Date]',
-      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
-      category: '[PLACEHOLDER: Category]',
-    },
-  ];
-
-  const faqs = [
-    {
-      q: '[PLACEHOLDER: FAQ Question 1]',
-      a: '[PLACEHOLDER: FAQ Answer 1]',
-    },
-    {
-      q: '[PLACEHOLDER: FAQ Question 2]',
-      a: '[PLACEHOLDER: FAQ Answer 2]',
-    },
-    {
-      q: '[PLACEHOLDER: FAQ Question 3]',
-      a: '[PLACEHOLDER: FAQ Answer 3]',
-    },
-    {
-      q: '[PLACEHOLDER: FAQ Question 4]',
-      a: '[PLACEHOLDER: FAQ Answer 4]',
-    },
-    {
-      q: '[PLACEHOLDER: FAQ Question 5]',
-      a: '[PLACEHOLDER: FAQ Answer 5]',
-    },
-    {
-      q: '[PLACEHOLDER: FAQ Question 6]',
-      a: '[PLACEHOLDER: FAQ Answer 6]',
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
@@ -95,37 +30,26 @@ export default function Tips() {
         </div>
       </section>
 
-      {/* Blog Posts */}
+      {/* Tips Content */}
       <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12">Latest Tips & Articles</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-12">AC Maintenance Tips</h2>
           <div className="space-y-8">
-            {tips.map((post, idx) => (
-              <div key={idx} className="p-8 bg-white rounded-xl border-2 border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300">
-                <div className="flex justify-between items-start mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">{post.category}</span>
-                  <span className="text-slate-500 text-sm">{post.date}</span>
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">{post.title}</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">{post.excerpt}</p>
-                <a href="#" className="text-blue-600 font-semibold hover:text-blue-700">Read More →</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            {faqs.map((item, idx) => (
-              <div key={idx} className="p-6 bg-slate-50 rounded-lg border border-slate-200">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">{item.q}</h3>
-                <p className="text-slate-700 leading-relaxed">{item.a}</p>
-              </div>
-            ))}
+            <div className="p-8 bg-white rounded-xl border-2 border-slate-200">
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">[PLACEHOLDER: Tip Title 1]</h3>
+              <p className="text-slate-600 leading-relaxed">[PLACEHOLDER: Tip description and details]</p>
+            </div>
+            <div className="p-8 bg-white rounded-xl border-2 border-slate-200">
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">[PLACEHOLDER: Tip Title 2]</h3>
+              <p className="text-slate-600 leading-relaxed">[PLACEHOLDER: Tip description and details]</p>
+            </div>
+            <div className="p-8 bg-white rounded-xl border-2 border-slate-200">
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">[PLACEHOLDER: Tip Title 3]</h3>
+              <p className="text-slate-600 leading-relaxed">[PLACEHOLDER: Tip description and details]</p>
+            </div>
           </div>
         </div>
       </section>
