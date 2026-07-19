@@ -19,6 +19,10 @@ const config: Config = {
         destructive: '#DC2626',
         ring: '#0F172A',
       },
+      borderColor: {
+        DEFAULT: '#E2E8F0',
+        border: '#E2E8F0',
+      },
       fontFamily: {
         sans: ['var(--font-open-sans)', 'var(--font-poppins)', 'system-ui', 'sans-serif'],
       },
