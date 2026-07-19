@@ -63,9 +63,9 @@ export default function Home() {
             onUpdate: function() {
               const progress = this.progress();
               setStats({
-                customers: Math.floor(500 * progress),
-                experience: Math.floor(15 * progress),
-                projects: Math.floor(2500 * progress),
+                customers: Math.floor(1000 * progress),
+                experience: Math.floor(20 * progress),
+                projects: Math.floor(5000 * progress),
               });
             },
             ease: 'power2.out',
@@ -174,18 +174,18 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
-              { title: 'Installation', desc: 'Expert AC system installation', icon: '⚙️', link: '/services' },
-              { title: 'Maintenance', desc: 'Regular maintenance & tune-ups', icon: '🔧', link: '/services' },
-              { title: 'Repair', desc: '24/7 emergency repairs', icon: '🛠️', link: '/services' },
+              { title: 'Installation', desc: '[PLACEHOLDER: Service description]', icon: '⚙️', link: '/services' },
+              { title: 'Maintenance', desc: '[PLACEHOLDER: Service description]', icon: '🔧', link: '/services' },
+              { title: 'Repair', desc: '[PLACEHOLDER: Service description]', icon: '🛠️', link: '/services' },
             ].map((service, idx) => (
-              <Link href={service.link} key={idx}>
-                <div className="service-card p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-400 hover:shadow-xl transition-all duration-300 cursor-pointer">
-                  <div className="text-5xl mb-4">{service.icon}</div>
-                  <h4 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h4>
-                  <p className="text-slate-600 mb-4">{service.desc}</p>
-                  <span className="text-blue-600 font-semibold hover:text-blue-700">Learn More →</span>
-                </div>
-              </Link>
+              <div key={idx} className="service-card p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
+                <div className="text-5xl mb-4">{service.icon}</div>
+                <h4 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h4>
+                <p className="text-slate-600 mb-6">{service.desc}</p>
+                <Link href={service.link} className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                  Learn More
+                </Link>
+              </div>
             ))}
           </div>
 
@@ -202,15 +202,15 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="grid md:grid-cols-3 gap-12 text-center">
             <div>
-              <div className="text-5xl sm:text-6xl font-bold mb-2">{stats.customers}+</div>
+              <div className="text-5xl sm:text-6xl font-bold mb-2">[PLACEHOLDER: {stats.customers}+]</div>
               <p className="text-lg text-slate-300">Happy Customers</p>
             </div>
             <div>
-              <div className="text-5xl sm:text-6xl font-bold mb-2">{stats.experience}+</div>
+              <div className="text-5xl sm:text-6xl font-bold mb-2">[PLACEHOLDER: {stats.experience}+]</div>
               <p className="text-lg text-slate-300">Years Experience</p>
             </div>
             <div>
-              <div className="text-5xl sm:text-6xl font-bold mb-2">{stats.projects}+</div>
+              <div className="text-5xl sm:text-6xl font-bold mb-2">[PLACEHOLDER: {stats.projects}+]</div>
               <p className="text-lg text-slate-300">Systems Installed</p>
             </div>
           </div>
@@ -223,12 +223,12 @@ export default function Home() {
           <h3 className="text-5xl font-bold text-slate-900 mb-16 text-center">Why Choose Luxe Aire</h3>
           <div className="grid md:grid-cols-2 gap-12">
             {[
-              'Authorized AC Dealer & Installer',
-              'Certified Professional Technicians',
-              '24/7 Emergency Service Available',
-              'Competitive & Transparent Pricing',
-              'Quality Guaranteed with Warranty',
-              'Same-Day Service in Most Areas',
+              '[PLACEHOLDER: Feature 1]',
+              '[PLACEHOLDER: Feature 2]',
+              '[PLACEHOLDER: Feature 3]',
+              '[PLACEHOLDER: Feature 4]',
+              '[PLACEHOLDER: Feature 5]',
+              '[PLACEHOLDER: Feature 6]',
             ].map((feature, idx) => (
               <div key={idx} className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 text-lg">✓</div>

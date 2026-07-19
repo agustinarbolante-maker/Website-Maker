@@ -5,67 +5,67 @@ import Link from 'next/link';
 export default function Tips() {
   const tips = [
     {
-      title: 'How to Clean Your AC Filter',
-      date: 'Feb 15, 2026',
-      excerpt: 'Learn the simple steps to clean or replace your AC filter for better performance and air quality.',
-      category: 'Maintenance',
+      title: '[PLACEHOLDER: Blog Title 1]',
+      date: '[PLACEHOLDER: Date]',
+      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
+      category: '[PLACEHOLDER: Category]',
     },
     {
-      title: '5 Signs Your AC Needs Professional Repair',
-      date: 'Feb 10, 2026',
-      excerpt: 'Don\'t ignore these warning signs. Your AC might need professional attention before it breaks down completely.',
-      category: 'Repair',
+      title: '[PLACEHOLDER: Blog Title 2]',
+      date: '[PLACEHOLDER: Date]',
+      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
+      category: '[PLACEHOLDER: Category]',
     },
     {
-      title: 'Energy-Saving Tips for Summer AC Usage',
-      date: 'Feb 8, 2026',
-      excerpt: 'Reduce your electricity bills while staying cool with these practical energy-saving techniques for AC usage.',
-      category: 'Tips',
+      title: '[PLACEHOLDER: Blog Title 3]',
+      date: '[PLACEHOLDER: Date]',
+      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
+      category: '[PLACEHOLDER: Category]',
     },
     {
-      title: 'Why Regular AC Maintenance Matters',
-      date: 'Feb 5, 2026',
-      excerpt: 'Preventive maintenance extends AC lifespan, improves efficiency, and saves you money on repairs.',
-      category: 'Maintenance',
+      title: '[PLACEHOLDER: Blog Title 4]',
+      date: '[PLACEHOLDER: Date]',
+      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
+      category: '[PLACEHOLDER: Category]',
     },
     {
-      title: 'Choosing the Right AC Unit for Your Home',
-      date: 'Jan 30, 2026',
-      excerpt: 'Guide to selecting the perfect AC system based on room size, budget, and cooling needs.',
-      category: 'Installation',
+      title: '[PLACEHOLDER: Blog Title 5]',
+      date: '[PLACEHOLDER: Date]',
+      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
+      category: '[PLACEHOLDER: Category]',
     },
     {
-      title: 'Common AC Problems and Quick Fixes',
-      date: 'Jan 25, 2026',
-      excerpt: 'Troubleshoot common AC issues with our guide to quick fixes before calling a technician.',
-      category: 'Troubleshooting',
+      title: '[PLACEHOLDER: Blog Title 6]',
+      date: '[PLACEHOLDER: Date]',
+      excerpt: '[PLACEHOLDER: Article preview/excerpt]',
+      category: '[PLACEHOLDER: Category]',
     },
   ];
 
   const faqs = [
     {
-      q: 'How often should I service my AC?',
-      a: 'We recommend servicing your AC at least twice a year - before summer and before winter seasons. More frequent maintenance (quarterly) is ideal for commercial systems.',
+      q: '[PLACEHOLDER: FAQ Question 1]',
+      a: '[PLACEHOLDER: FAQ Answer 1]',
     },
     {
-      q: 'What should I do if my AC is making strange noises?',
-      a: 'Strange noises could indicate a mechanical issue or loose parts. Turn off your AC and contact us immediately for professional diagnosis.',
+      q: '[PLACEHOLDER: FAQ Question 2]',
+      a: '[PLACEHOLDER: FAQ Answer 2]',
     },
     {
-      q: 'How long do AC units typically last?',
-      a: 'With proper maintenance, most AC units last 10-15 years. Some can go longer with excellent care and regular servicing.',
+      q: '[PLACEHOLDER: FAQ Question 3]',
+      a: '[PLACEHOLDER: FAQ Answer 3]',
     },
     {
-      q: 'What is the cost of AC installation?',
-      a: 'Installation costs vary based on unit type, home size, and complexity. We provide free quotes after assessment.',
+      q: '[PLACEHOLDER: FAQ Question 4]',
+      a: '[PLACEHOLDER: FAQ Answer 4]',
     },
     {
-      q: 'Do you offer emergency repair services?',
-      a: 'Yes! We offer 24/7 emergency repair services. Call 285612078 anytime, even on weekends and holidays.',
+      q: '[PLACEHOLDER: FAQ Question 5]',
+      a: '[PLACEHOLDER: FAQ Answer 5]',
     },
     {
-      q: 'What warranty do you provide?',
-      a: 'We provide manufacturer warranty on new units plus our service warranty on installation workmanship.',
+      q: '[PLACEHOLDER: FAQ Question 6]',
+      a: '[PLACEHOLDER: FAQ Answer 6]',
     },
   ];
 

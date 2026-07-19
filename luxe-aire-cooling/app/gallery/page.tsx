@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export default function Gallery() {
   const projects = [
-    { title: 'Residential Installation', desc: 'Complete AC unit installation for 3-bedroom home' },
-    { title: 'Commercial Retrofit', desc: 'Multi-zone system for 500 sqm office space' },
-    { title: 'Emergency Repair', desc: 'Compressor replacement and system restart' },
-    { title: 'Maintenance Service', desc: 'Quarterly maintenance for building complex' },
-    { title: 'Split System Install', desc: 'Modern split AC system with smart controls' },
-    { title: 'Industrial Cooling', desc: 'Large capacity cooling for manufacturing facility' },
+    { title: '[PLACEHOLDER: Project 1]', desc: '[PLACEHOLDER: Project description]' },
+    { title: '[PLACEHOLDER: Project 2]', desc: '[PLACEHOLDER: Project description]' },
+    { title: '[PLACEHOLDER: Project 3]', desc: '[PLACEHOLDER: Project description]' },
+    { title: '[PLACEHOLDER: Project 4]', desc: '[PLACEHOLDER: Project description]' },
+    { title: '[PLACEHOLDER: Project 5]', desc: '[PLACEHOLDER: Project description]' },
+    { title: '[PLACEHOLDER: Project 6]', desc: '[PLACEHOLDER: Project description]' },
   ];
 
   return (
@@ -65,16 +65,16 @@ export default function Gallery() {
         <div className="mx-auto max-w-7xl">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-8">
-              <div className="text-5xl font-bold text-blue-600 mb-2">2500+</div>
-              <p className="text-slate-600 text-lg">Projects Completed</p>
+              <div className="text-5xl font-bold text-blue-600 mb-2">[PLACEHOLDER: #]</div>
+              <p className="text-slate-600 text-lg">[PLACEHOLDER: Metric]</p>
             </div>
             <div className="p-8">
-              <div className="text-5xl font-bold text-blue-600 mb-2">98%</div>
-              <p className="text-slate-600 text-lg">Customer Satisfaction</p>
+              <div className="text-5xl font-bold text-blue-600 mb-2">[PLACEHOLDER: #]</div>
+              <p className="text-slate-600 text-lg">[PLACEHOLDER: Metric]</p>
             </div>
             <div className="p-8">
-              <div className="text-5xl font-bold text-blue-600 mb-2">15+</div>
-              <p className="text-slate-600 text-lg">Years in Business</p>
+              <div className="text-5xl font-bold text-blue-600 mb-2">[PLACEHOLDER: #]</div>
+              <p className="text-slate-600 text-lg">[PLACEHOLDER: Metric]</p>
             </div>
           </div>
         </div>
