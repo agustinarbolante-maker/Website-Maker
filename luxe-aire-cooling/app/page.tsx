@@ -36,17 +36,6 @@ export default function Home() {
         ease: 'expo.out',
       });
 
-      gsap.from('.service-card', {
-        opacity: 0,
-        y: 40,
-        duration: 0.6,
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: '.services-section',
-          start: 'top center+=100',
-        },
-        ease: 'power3.out',
-      });
     });
 
     return () => ctx.revert();
