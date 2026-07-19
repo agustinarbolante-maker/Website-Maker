@@ -239,25 +239,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Preview */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-blue-50">
-        <div className="mx-auto max-w-7xl">
-          <h3 className="text-5xl font-bold text-slate-900 mb-16 text-center">Customer Testimonials</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { name: 'Maria Santos', text: 'Professional service and fair pricing. Highly recommended!' },
-              { name: 'Juan Cruz', text: 'Fast response time and quality work. They fixed my AC the same day.' },
-              { name: 'Rosa Mendez', text: 'Best AC technicians in Manila. Very knowledgeable and courteous.' },
-            ].map((testimonial, idx) => (
-              <div key={idx} className="p-8 bg-white rounded-xl border border-slate-200">
-                <div className="flex gap-1 mb-4 text-yellow-400">★★★★★</div>
-                <p className="text-slate-600 mb-6 italic">"{testimonial.text}"</p>
-                <p className="font-bold text-slate-900">{testimonial.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white">

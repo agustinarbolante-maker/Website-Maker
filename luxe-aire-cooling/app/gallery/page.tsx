@@ -1,21 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Gallery() {
-  const [filter, setFilter] = useState('all');
-
   const projects = [
-    { title: 'Residential Installation', category: 'installation', desc: 'Complete AC unit installation for 3-bedroom home' },
-    { title: 'Commercial Retrofit', category: 'commercial', desc: 'Multi-zone system for 500 sqm office space' },
-    { title: 'Emergency Repair', category: 'repair', desc: 'Compressor replacement and system restart' },
-    { title: 'Maintenance Service', category: 'maintenance', desc: 'Quarterly maintenance for building complex' },
-    { title: 'Split System Install', category: 'installation', desc: 'Modern split AC system with smart controls' },
-    { title: 'Industrial Cooling', category: 'commercial', desc: 'Large capacity cooling for manufacturing facility' },
+    { title: 'Residential Installation', desc: 'Complete AC unit installation for 3-bedroom home' },
+    { title: 'Commercial Retrofit', desc: 'Multi-zone system for 500 sqm office space' },
+    { title: 'Emergency Repair', desc: 'Compressor replacement and system restart' },
+    { title: 'Maintenance Service', desc: 'Quarterly maintenance for building complex' },
+    { title: 'Split System Install', desc: 'Modern split AC system with smart controls' },
+    { title: 'Industrial Cooling', desc: 'Large capacity cooling for manufacturing facility' },
   ];
-
-  const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
@@ -43,37 +38,16 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* Filter */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex flex-wrap gap-4 justify-center">
-            {['all', 'installation', 'repair', 'maintenance', 'commercial'].map(cat => (
-              <button
-                key={cat}
-                onClick={() => setFilter(cat)}
-                className={`px-6 py-2 rounded-full font-semibold transition ${
-                  filter === cat
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-slate-200 text-slate-900 hover:bg-slate-300'
-                }`}
-              >
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Gallery Grid */}
       <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filtered.map((project, idx) => (
+            {projects.map((project, idx) => (
               <div key={idx} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div className="aspect-square bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
                   <div className="text-white text-center">
-                    <div className="text-6xl mb-4">🏢</div>
-                    <p className="text-lg font-semibold">{project.category}</p>
+                    <div className="text-6xl">❄️</div>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
