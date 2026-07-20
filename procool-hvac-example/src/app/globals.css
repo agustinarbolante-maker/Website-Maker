@@ -42,7 +42,7 @@
   }
 
   .section-container {
-    @apply max-w-7xl mx-auto px-6 py-20;
+    @apply max-w-7xl mx-auto px-6 py-16;
   }
 
   .grid-item {

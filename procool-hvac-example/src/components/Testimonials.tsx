@@ -21,7 +21,7 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-50 to-slate-100">
+    <section className="py-16 bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-4">

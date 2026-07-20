@@ -33,7 +33,7 @@ export default function Features() {
   ]
 
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-16 bg-white">
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-4">

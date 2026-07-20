@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-r from-primary to-slate-900">
+    <section id="contact" className="py-16 bg-gradient-to-r from-primary to-slate-900">
       <div className="section-container">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-white mb-4">

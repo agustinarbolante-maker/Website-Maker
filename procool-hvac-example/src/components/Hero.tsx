@@ -48,12 +48,12 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-primary via-slate-900 to-slate-800 overflow-hidden pt-20">
+    <section className="relative bg-gradient-to-br from-primary via-slate-900 to-slate-800 overflow-hidden pt-20 pb-20">
       {/* Animated background elements */}
       <div className="absolute top-20 right-10 w-96 h-96 bg-accent opacity-10 rounded-full blur-3xl hero-bg-accent" />
       <div className="absolute bottom-0 left-20 w-80 h-80 bg-blue-400 opacity-5 rounded-full blur-3xl" />
 
-      <div ref={heroRef} className="section-container relative z-10 flex flex-col justify-center min-h-screen">
+      <div ref={heroRef} className="section-container relative z-10 flex flex-col justify-center py-24">
         <div className="max-w-3xl">
           <h1
             ref={headingRef}
