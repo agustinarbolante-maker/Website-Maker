@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-primary via-slate-900 to-slate-800 overflow-hidden pt-20 pb-20">
@@ -17,12 +19,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="btn-primary text-lg px-8 py-4 hover:shadow-lg transform hover:scale-105 transition-all">
+            <Link href="/contact" className="btn-primary text-lg px-8 py-4 hover:shadow-lg transform hover:scale-105 transition-all text-center">
               Schedule Consultation
-            </button>
-            <button className="btn-secondary text-lg px-8 py-4 hover:shadow-lg transform hover:scale-105 transition-all">
+            </Link>
+            <a href="tel:+63212345678" className="btn-secondary text-lg px-8 py-4 hover:shadow-lg transform hover:scale-105 transition-all text-center">
               📞 +63 (2) 1234-5678
-            </button>
+            </a>
           </div>
 
           {/* Trust indicators */}
