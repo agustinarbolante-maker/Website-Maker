@@ -55,9 +55,12 @@ export default function CTA() {
             <p className="text-gray-200 mb-4">
               Schedule your service appointment at your convenience.
             </p>
-            <button className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer">
+            <a
+              href="mailto:info@procool-hvac.com?subject=Service%20Booking%20Request&body=I%20would%20like%20to%20schedule%20an%20HVAC%20service%20appointment."
+              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer"
+            >
               Book Now
-            </button>
+            </a>
           </div>
         </div>
 
