@@ -1,6 +1,7 @@
 'use client'
 
 import { FormEvent, useState } from 'react'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
 export default function CTA() {
   const [formData, setFormData] = useState({
@@ -149,7 +150,7 @@ export default function CTA() {
               {/* Phone */}
               <div className="p-6 bg-muted rounded-lg border border-border hover:border-accent transition-colors">
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">📞</span>
+                  <Phone className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Phone</h4>
                     <a href="tel:+63212345678" className="text-accent hover:text-blue-700 font-medium">
@@ -163,7 +164,7 @@ export default function CTA() {
               {/* Email */}
               <div className="p-6 bg-muted rounded-lg border border-border hover:border-accent transition-colors">
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">✉️</span>
+                  <Mail className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Email</h4>
                     <a href="mailto:info@procool-hvac.com" className="text-accent hover:text-blue-700 font-medium">
@@ -177,7 +178,7 @@ export default function CTA() {
               {/* Address */}
               <div className="p-6 bg-muted rounded-lg border border-border hover:border-accent transition-colors">
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">📍</span>
+                  <MapPin className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Service Area</h4>
                     <p className="text-secondary">
@@ -191,7 +192,7 @@ export default function CTA() {
               {/* Hours */}
               <div className="p-6 bg-muted rounded-lg border border-border hover:border-accent transition-colors">
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">🕐</span>
+                  <Clock className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Hours</h4>
                     <p className="text-secondary text-sm">
