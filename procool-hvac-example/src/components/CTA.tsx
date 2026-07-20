@@ -1,4 +1,18 @@
+'use client'
+
 export default function CTA() {
+  const handleEmail = () => {
+    window.location.href = 'mailto:info@procool-hvac.com';
+  };
+
+  const handleCall = () => {
+    window.location.href = 'tel:+63212345678';
+  };
+
+  const handleBook = () => {
+    window.location.href = 'mailto:info@procool-hvac.com?subject=Service%20Booking%20Request&body=I%20would%20like%20to%20schedule%20an%20HVAC%20service%20appointment.%20Please%20let%20me%20know%20available%20times.';
+  };
+
   return (
     <section id="contact" className="py-16 bg-gradient-to-r from-primary to-slate-900">
       <div className="section-container">
@@ -21,12 +35,12 @@ export default function CTA() {
             <p className="text-gray-200 mb-4">
               Send us your inquiry and we'll respond within 2 hours.
             </p>
-            <a
-              href="mailto:info@procool-hvac.com"
-              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer"
+            <button
+              onClick={handleEmail}
+              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer border-none"
             >
               Send Email
-            </a>
+            </button>
           </div>
 
           {/* Phone CTA */}
@@ -38,12 +52,12 @@ export default function CTA() {
             <p className="text-gray-200 mb-4">
               Speak directly with our team. Available 24/7 for emergencies.
             </p>
-            <a
-              href="tel:+63212345678"
-              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer"
+            <button
+              onClick={handleCall}
+              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer border-none"
             >
               +63 (2) 1234-5678
-            </a>
+            </button>
           </div>
 
           {/* Booking CTA */}
@@ -55,12 +69,12 @@ export default function CTA() {
             <p className="text-gray-200 mb-4">
               Schedule your service appointment at your convenience.
             </p>
-            <a
-              href="mailto:info@procool-hvac.com?subject=Service%20Booking%20Request&body=I%20would%20like%20to%20schedule%20an%20HVAC%20service%20appointment."
-              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer"
+            <button
+              onClick={handleBook}
+              className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer border-none"
             >
               Book Now
-            </a>
+            </button>
           </div>
         </div>
 
