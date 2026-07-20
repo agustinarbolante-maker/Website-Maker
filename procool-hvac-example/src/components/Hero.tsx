@@ -10,34 +10,30 @@ export default function Hero() {
   const ctaRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (!heroRef.current) return
+    if (!headingRef.current || !subtitleRef.current || !ctaRef.current) return
+
+    // Ensure elements are visible
+    if (headingRef.current) headingRef.current.style.opacity = '1'
+    if (subtitleRef.current) subtitleRef.current.style.opacity = '1'
+    if (ctaRef.current) ctaRef.current.style.opacity = '1'
 
     const tl = gsap.timeline()
 
-    tl.from(headingRef.current, {
-      opacity: 0,
-      y: 30,
-      duration: 0.8,
-      ease: 'power2.out',
-    })
-      .from(
+    tl.fromTo(
+      headingRef.current,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' }
+    )
+      .fromTo(
         subtitleRef.current,
-        {
-          opacity: 0,
-          y: 20,
-          duration: 0.8,
-          ease: 'power2.out',
-        },
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' },
         '-=0.6'
       )
-      .from(
+      .fromTo(
         ctaRef.current,
-        {
-          opacity: 0,
-          y: 20,
-          duration: 0.8,
-          ease: 'power2.out',
-        },
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' },
         '-=0.6'
       )
 
